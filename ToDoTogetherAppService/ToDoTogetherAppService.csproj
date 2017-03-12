@@ -147,12 +147,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\Startup.MobileApp.cs" />
-    <Compile Include="Controllers\TodoItemController.cs" />
+    <Compile Include="Controllers\AssignmentController.cs" />
+    <Compile Include="Controllers\ProjectController.cs" />
+    <Compile Include="Controllers\TaskItemController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DataObjects\Assignment.cs" />
     <Compile Include="DataObjects\Project.cs" />
     <Compile Include="DataObjects\TaskItem.cs" />
-    <Compile Include="DataObjects\TodoItem.cs" />
     <Compile Include="DataObjects\User.cs" />
     <Compile Include="Models\ToDoTogetherAppContext.cs" />
     <Compile Include="Startup.cs" />
