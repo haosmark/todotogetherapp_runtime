@@ -10,7 +10,7 @@ namespace ToDoTogetherAppService.DataObjects
     public class Project : EntityData
     {
         public string Name { get; set; }
-        public int OwnerId { get; set; }
+        public string OwnerId { get; set; }
 
         [ForeignKey("OwnerId")]
         public User Owner { get; set; }
