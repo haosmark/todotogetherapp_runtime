@@ -38,7 +38,7 @@ namespace ToDoTogetherAppService.Controllers
                 // get the credentials of the user who already signed in
                 credentials = await User.GetAppServiceIdentityAsync<FacebookCredentials>(Request);
             }
-            fbRequestUrl = "http://graph.facebook.com/me?fields=name,email,id&access_token=" + credentials.AccessToken;
+            fbRequestUrl = "https://graph.facebook.com/me?fields=name,email,id&access_token=" + credentials.AccessToken;
             var client = new HttpClient();
             var resp = await client.GetAsync(fbRequestUrl);
             resp.EnsureSuccessStatusCode();
